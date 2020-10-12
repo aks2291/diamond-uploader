@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { DiamondDto } from './Diamond.dto';
+import { DiamondDto } from './diamond.dto';
 import { createHash } from 'crypto';
 import stringify = require('json-stable-stringify');
 

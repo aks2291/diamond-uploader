@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { AppService } from './app.service';
-import { DiamondDto } from './Diamond.dto';
+import { DiamondDto } from './diamond.dto';
 
 @Controller()
 export class AppController {
