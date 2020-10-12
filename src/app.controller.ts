@@ -6,7 +6,10 @@ import { DiamondDto } from './diamond.dto';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-
+  @Get()
+  getHello(): string {
+    return this.appService.getHello();
+  }
   @Get('health')
   getHealth(): { uptime: string } {
     return { uptime: this.appService.getHealth()};

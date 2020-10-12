@@ -6,6 +6,9 @@ import stringify = require('json-stable-stringify');
 @Injectable()
 export class AppService {
 
+  getHello(): string {
+    return 'Welcome to Diamond Uploader Backend!'
+  }
   getHealth(): string {
     let seconds = process.uptime();
     const hours   = Math.floor(seconds/3600);
